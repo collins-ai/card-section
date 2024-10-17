@@ -18,14 +18,25 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    @media screen and (max-width: 768px) {
+        height: auto;    
+    }
 }
 header {
     width: 480px;
     text-align: center;
+    @media screen and (max-width: 768px) {
+        width: 300px; 
+        margin-top: 24px;
+    }
 }
 header p {
     color: hsl(229, 6%, 66%);
     margin-bottom: 24px; 
+    font-size: 15px;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 48px;
+    }
 }
 header .span1{
     font-weight: 100;
@@ -36,30 +47,55 @@ header .span2{
 }
 .span1, .span2 {
     display: block;
+    @media screen and (max-width: 768px) {
+        font-size: 25px;
+    }
 }
 main {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;        
+    }
 }
 main .sec1 {
     border-top: 5px solid hsl(180, 62%, 55%);
     margin-right: 24px;
+    @media screen and (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 48px;  
+    }
 }
 main .sec2 {
     border-top: 5px solid hsl(0, 78%, 62%);
     margin-bottom: 24px;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 0;
+        margin-bottom: 48px;      
+    }
 }
 main .sec3 {
     border-top: 5px solid hsl(34, 97%, 64%);
     margin-bottom: 24px;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 0;  
+        margin-bottom: 48px;      
+    }
 }
 main .sec4 {
     border-top: 5px solid hsl(212, 86%, 64%);
     margin-left: 24px;
+    @media screen and (max-width: 768px) {
+        margin-left: 0; 
+        margin-bottom: 48px;     
+    }
 }
 main h2 {
     color: hsl(234, 12%, 34%);
     margin-bottom: 12px;
+    @media screen and (max-width: 768px) {
+        font-size: 20px;
+    }
 } 
 main p {
     color: hsl(229, 6%, 66%);
@@ -70,7 +106,7 @@ main img {
     margin-left: 85%;
 }
 .sec1, .sec2, .sec3, .sec4 {
-    width: 360px;
+    width: 300px;
     background-color: hsl(0, 0%, 100%);
     padding: 24px;
     box-shadow: -1px 10px 20px hsl(229, 17%, 87%);
